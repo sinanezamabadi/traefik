@@ -1,0 +1,19 @@
+api:
+  dashboard: true
+  insecure: true
+#Enable Docker Provider
+providers:
+  docker:
+    watch: true
+    exposedByDefault: false
+    swarmMode: false
+#Logging
+log:
+  level: INFO
+  format: json
+accessLog:
+  format: json  
+#Entrypoints
+entryPoints:
+  web:
+    address: ":80"
